@@ -1,0 +1,33 @@
+.home {
+    width: 100vw;
+    height: 90vh;
+    background-image: url(../public/img/home_background.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    .nameContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #line {
+            margin: 1rem 0;
+            width: 600px;
+            height: 0px;
+            border: 1px solid #47555E;
+        }
+        p {
+            font-size: 64px;
+            font-family: 'Roboto Flex', sans-serif;
+            font-weight: 500;
+            color: #47555E;
+
+        }
+
+    }
+}

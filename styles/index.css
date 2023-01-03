@@ -1,0 +1,128 @@
+/*Css reset */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  background-color: #47555E;
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul li {
+  margin: 0 1rem;
+}
+header .logo_section {
+  height: 100%;
+  width: 10%;
+  background-image: url(../public/img/Logo-charles-cantin.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home {
+  width: 100vw;
+  height: 90vh;
+  background-image: url(../public/img/home_background.jpg);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .nameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home .nameContainer #line {
+  margin: 1rem 0;
+  width: 600px;
+  height: 0px;
+  border: 1px solid #47555E;
+}
+.home .nameContainer p {
+  font-size: 64px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  color: #47555E;
+}
+
+/* CSS Rules for generic elements/////////////////*/
+* {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+  color: #47555E;
+}
+
+a {
+  font-weight: 300;
+  font-family: "Roboto Flex", sans-serif;
+  color: #F2F1F1;
+  font-size: 24px;
+  text-decoration: none;
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */

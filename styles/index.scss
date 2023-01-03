@@ -1,0 +1,32 @@
+@import 'settings.scss';
+@import 'header.scss';
+@import 'home.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,500&display=swap');
+
+
+$color-dark: #47555E;
+$color-light: #F2F1F1;
+$color-blue: #9FD1FF;
+$font: 'Roboto Flex', sans-serif;
+$body-font-weight: 100;
+$title-font-weight: 300;
+
+/* CSS Rules for generic elements/////////////////*/
+* {
+    font-family: $font;
+}
+h1 {
+    font-size: 64px;
+    color: $color-dark;
+    
+}
+a {
+    
+    font-weight: $title-font-weight;
+    font-family: $font;
+    color: $color-light;
+    font-size: 24px;
+    text-decoration: none;
+    list-style: none;
+    
+}

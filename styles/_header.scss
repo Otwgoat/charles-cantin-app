@@ -1,0 +1,41 @@
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #47555E;
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                margin: 0 1rem;
+            }
+            
+        }
+    }
+    .logo_section {
+        height: 100%;
+        width: 10%;
+        background-image: url(../public/img/Logo-charles-cantin.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+    .social_section {
+        height: 100%;
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+    }
+
+}
