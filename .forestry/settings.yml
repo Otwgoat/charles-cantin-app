@@ -3,7 +3,9 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections: 
+sections:
+- type: heading
+  label: photo
 upload_dir: public/img
 public_path: "/public/img"
 front_matter_path: ''
