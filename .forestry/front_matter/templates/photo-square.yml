@@ -8,3 +8,4 @@ fields:
     maxSize: 64
   label: photo_name
   description: Upload a photo
+  default: "/public/img/home_background.jpg"
