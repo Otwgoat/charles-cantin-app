@@ -1,4 +1,10 @@
 ---
 label: Photo Square
 hide_body: true
-fields: []
+fields:
+- name: photo_name
+  type: file
+  config:
+    maxSize: 64
+  label: photo_name
+  description: Upload a photo
