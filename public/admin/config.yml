@@ -13,6 +13,7 @@ collections:
     files:
       - label: "Photos"
         name: 'photos'
+        folder: 'content/pages'
         file: 'content/pages/photos.json'
         create: true
         fields: 
