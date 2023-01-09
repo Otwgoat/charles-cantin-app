@@ -55,9 +55,7 @@ const portfolio = () => {
                 
             </ul>
         </div>
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <img src={image} alt='image test'></img>
+       
 
 
 
