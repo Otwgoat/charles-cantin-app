@@ -5,7 +5,7 @@ import {attributes} from '../content/pages/portfolio.md'
 
 
 const portfolio = () => {
-    let {title, description} = attributes;
+    let {title, description, image} = attributes;
     const [allIsActive, setAllIsActive] = useState(true);
     const [weddingIsActive, setWeddingIsActive] = useState(false);
     const [pregnancyIsActive, setPregnancyIsActive] = useState(false);
@@ -57,6 +57,7 @@ const portfolio = () => {
         </div>
         <h3>{title}</h3>
         <p>{description}</p>
+        <img src={image} alt='image test'></img>
 
 
 
