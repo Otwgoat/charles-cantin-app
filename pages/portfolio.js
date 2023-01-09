@@ -1,8 +1,11 @@
 import React, { use, useState } from 'react'
 import Meta from '../components/Meta'
+import {attributes} from '../content/pages/portfolio.md'
+
 
 
 const portfolio = () => {
+    let {title, description} = attributes;
     const [allIsActive, setAllIsActive] = useState(true);
     const [weddingIsActive, setWeddingIsActive] = useState(false);
     const [pregnancyIsActive, setPregnancyIsActive] = useState(false);
@@ -52,10 +55,23 @@ const portfolio = () => {
                 
             </ul>
         </div>
+        <h3>{title}</h3>
+        <p>{description}</p>
+
 
 
     </div>
   )
 } 
 
-export default portfolio
+export default portfolio;
+
+/*export const getStaticProps = async () => {
+    const photos = await import(`../content/pages/portfolio.md`);
+    console.log(photos);
+    return {
+        props: {
+            photos,
+        }
+    }
+}*/

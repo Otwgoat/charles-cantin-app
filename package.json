@@ -16,12 +16,15 @@
     "@mdi/font": "^7.1.96",
     "@next/font": "13.1.1",
     "eslint-config-next": "^12.0.4",
+    "frontmatter-markdown-loader": "^3.7.0",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.57.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-react": "^7.18.6",
     "eslint": "^8.30.0",
     "eslint-plugin-react": "^7.31.11"
   }
