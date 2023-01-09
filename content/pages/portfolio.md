@@ -1,5 +1,5 @@
 ---
-title: A simple test.
+title: A second test
 description: We are testing netlifyCMS.
-image:
+image: img/home_background.jpg
 ---
