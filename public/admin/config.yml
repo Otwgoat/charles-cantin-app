@@ -9,7 +9,7 @@ collections:
     files:
     - label: "Portfolio"
       name: "portfolio"
-      file: "content/pages/portfolio.md"
+      folder: "content/pages"
       fields:
         - { label: "Title", name: "title", widget: "string"}
         - { label: "Description", name: "description", widget: "text" }
