@@ -3,12 +3,13 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: public/img
 public_folder: img
+extension: 'json'
+format: 'json'
 collections:
   - name: "pages"
     label: "Pages"
     create: true
     folder: "content/pages"
-    format: 'json'
     fields: 
     - {label: "Title", name: "title" , widget: "string"}
     - {label: "Img",  name: "image", widget: "image"}
