@@ -10,8 +10,13 @@ collections:
     label: "Pages"
     create: true
     folder: "content/pages"
-    fields: 
-    - {label: "Title", name: "title" , widget: "string"}
-    - {label: "Img",  name: "image", widget: "image"}
+    files:
+      - label: "Photos"
+        name: 'photos'
+        file: 'content/pages/photos.json'
+        create: true
+        fields: 
+          - {label: "Title", name: "title" , widget: "string"}
+          - {label: "Img",  name: "image", widget: "image"}
     
         
