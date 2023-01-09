@@ -6,18 +6,25 @@ public_folder: img
 extension: 'json'
 format: 'json'
 collections:
-  - name: "pages"
-    label: "Pages"
-    create: true
-    folder: "content/pages"
-    files:
+  - label: "Portfolio"
+    name: portfolio
+    files:  
       - label: "Photos"
-        name: 'photos'
-        folder: 'content/pages'
-        file: 'content/pages/photos.json'
-        create: true
-        fields: 
-          - {label: "Title", name: "title" , widget: "string"}
-          - {label: "Img",  name: "image", widget: "image"}
+        name: photos
+        file: "../../content/portfolio/photos.json"
+        fields:
+          - label: "Liste des photos"
+            name: liste des photos
+            widget: list
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Tag", name: tag, widget: string}
+              - {label: 'Image', name: image, widget: image}
+
+
+
+
+
+         
     
         
