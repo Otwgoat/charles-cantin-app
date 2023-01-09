@@ -8,6 +8,7 @@ collections:
     label: "Pages"
     create: true
     folder: "content/pages"
+    format: 'json'
     fields: 
     - {label: "Title", name: "title" , widget: "string"}
     - {label: "Img",  name: "image", widget: "image"}
