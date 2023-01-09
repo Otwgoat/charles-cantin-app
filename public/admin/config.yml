@@ -10,7 +10,7 @@ collections:
     - label: "Portfolio"
       name: "portfolio"
       folder: "content/pages"
-      files: "content/pages/portfolio.md"
+      file: "content/pages/portfolio.md"
       create: true
       fields:
         - { label: "Title", name: "title", widget: "string"}
