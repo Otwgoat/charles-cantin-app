@@ -7,14 +7,9 @@ collections:
   - name: "pages"
     label: "Pages"
     create: true
-    files:
-    - label: "Portfolio"
-      name: "portfolio"
-      folder: "content/pages"
-      file: "content/pages/portfolio.md"
-      create: true
-      fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Description", name: "description", widget: "text" }
-        - { label: "Img", name: "image", widget: "image"}
+    folder: "content/pages"
+    fields: 
+    - {label: "Title", name: "title" , widget: "string"}
+    - {label: "Img",  name: "image", widget: "image"}
+    
         
