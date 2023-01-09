@@ -1,0 +1,27 @@
+.portfolioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #filterNav {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+
+        .filterItem {
+            margin: 0 0rem;
+            color: #47555E;
+            padding: 0.5rem 1rem;
+            border-right: #47555E 1px solid;
+            
+        }
+        .filterItemActive {
+            margin: 0 0rem;
+            color: #F2F1F1;
+            background-color: #47555E;
+            padding: 0.5rem 1rem;
+        }
+    }
+
+}

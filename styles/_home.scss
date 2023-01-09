@@ -1,13 +1,10 @@
 .home {
-    width: 100vw;
     height: 90vh;
     background-image: url(../public/img/home_background.jpg);
     background-position: bottom;
     background-size: cover;
-    display: flex;
-    justify-content: center;
     align-items: center;
-
+    
     
 
     .nameContainer {
@@ -23,8 +20,7 @@
         }
         p {
             font-size: 64px;
-            font-family: 'Roboto Flex', sans-serif;
-            font-weight: 500;
+            font-weight: 400;
             color: #47555E;
 
         }

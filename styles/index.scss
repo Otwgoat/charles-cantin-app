@@ -1,24 +1,31 @@
 @import 'settings.scss';
 @import 'header.scss';
 @import 'home.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,500&display=swap');
+@import 'portfolio.scss';
+@import url('https://use.typekit.net/vnu5wuf.css');
 
 
 $color-dark: #47555E;
 $color-light: #F2F1F1;
 $color-blue: #9FD1FF;
-$font: 'Roboto Flex', sans-serif;
+$font: 'aglet-sans', sans-serif;
 $body-font-weight: 100;
 $title-font-weight: 300;
+
+
 
 /* CSS Rules for generic elements/////////////////*/
 * {
     font-family: $font;
 }
-h1 {
+h1, h2 {
     font-size: 64px;
     color: $color-dark;
-    
+    font-weight: 400;
+    font-style: normal;
+}
+h2 {
+    margin-top: 35px;
 }
 a {
     
@@ -28,5 +35,24 @@ a {
     font-size: 24px;
     text-decoration: none;
     list-style: none;
+
+    .social_icon {
+        color: $color-light;
+    }
+    
+}
+.container {
+    background-color: $color-light;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+.descriptionContainer {
+    margin-top: 35px;
+    width: 50%;
+    text-align: center;
+    color: $color-dark;
+
     
 }

@@ -12,7 +12,7 @@ const Header = () => {
             <nav className='navbar'>
                 <ul>
                     <li>
-                        <Link href="/">Portfolio</Link>
+                        <Link href="/portfolio">Portfolio</Link>
         
                     </li>
                     <li>
@@ -27,16 +27,17 @@ const Header = () => {
                 </ul>
         
             </nav>
-            <div className='logo_section'></div>
+            <Link href='/'><div className='logo_section'></div></Link>
+            
             <div className='social_section'>
                 <a href='https://www.facebook.com'>
-                    <FontAwesomeIcon icon={[`${iconPrefix}`,'facebook']} className="social_icon"/>
+                    <FontAwesomeIcon  icon={[`${iconPrefix}`,'facebook']} className="social_icon"/>
                 </a>
-                <a>
-                    <FontAwesomeIcon icon={[`${iconPrefix}`, 'twitter']} className="social_icon"/>
+                <a href='https://www.twitter.com'>
+                    <FontAwesomeIcon   icon={[`${iconPrefix}`, 'twitter']} className="social_icon"/>
                 </a>
-                <a>
-                    <FontAwesomeIcon icon={[`${iconPrefix}`, 'flickr']} className="social_icon"/>
+                <a href='https://www.instagram.com'>
+                    <FontAwesomeIcon  icon={[`${iconPrefix}`, 'instagram']} className="social_icon"/>
                 </a>
             </div>
                 
