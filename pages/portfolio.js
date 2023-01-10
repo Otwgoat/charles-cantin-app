@@ -59,9 +59,8 @@ const portfolio = (props) => {
             
             <div className='photosContainer'>
                 {photos.map((photo) => (
-                    <div key={photo.title} className="photoContainer">
-                        <Photo photo={photo} key={photo.title} />
-                    </div>
+                    <Photo photo={photo} key={photo.title} />
+                    
                 ))}
 
             </div>
