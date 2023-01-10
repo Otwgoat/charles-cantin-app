@@ -1,0 +1,17 @@
+{
+  "title": "Liste des photos",
+  "photos": [
+    {
+      "title": "test 1",
+      "tag": "mariage",
+      "alt": "une photo montrant deux mariés",
+      "image": "img/home_background.jpg"
+    },
+    {
+      "title": "test 2",
+      "tag": "logo",
+      "alt": "une image du logo",
+      "image": "img/Logo-charles-cantin-1.png"
+    }
+  ]
+}
