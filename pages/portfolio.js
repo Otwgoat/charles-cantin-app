@@ -1,6 +1,6 @@
 import React, { use, useState } from 'react'
 import Meta from '../components/Meta'
-import {attributes} from '../content/pages/portfolio.md'
+
 
 
 
