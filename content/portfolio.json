@@ -12,6 +12,12 @@
       "tag": "logo",
       "alt": "une image du logo",
       "image": "img/Logo-charles-cantin-1.png"
+    },
+    {
+      "title": "test 3",
+      "tag": "bébé",
+      "alt": "une photo de bébé",
+      "image": "img/Logo-charles-cantin-1.png"
     }
   ]
 }
