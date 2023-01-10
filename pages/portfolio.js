@@ -4,7 +4,9 @@ import Meta from '../components/Meta'
 
 
 
-const portfolio = () => {
+
+const portfolio = (props) => {
+    const photos = props.photos;
     
     const [allIsActive, setAllIsActive] = useState(true);
     const [weddingIsActive, setWeddingIsActive] = useState(false);
@@ -54,7 +56,19 @@ const portfolio = () => {
                 <li key='couple' className={coupleIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleCoupleItem}>Couple</li>
                 
             </ul>
+            
+            <div className='photosContainer'>
+                {photos.map((photo) => (
+                    <div key={photo.title} className="photoContainer">
+                        <Photo photo={photo} key={photo.title} />
+                    </div>
+                ))}
+
+            </div>
         </div>
+        
+        
+        
        
 
 
@@ -64,13 +78,18 @@ const portfolio = () => {
 } 
 
 export default portfolio;
+import fsPromises from 'fs/promises';
+import path from 'path';
+import Photo from '../components/Photo';
 
-/*export const getStaticProps = async () => {
-    const photos = await import(`../content/pages/portfolio.md`);
-    console.log(photos);
+export const getStaticProps = async () => {
+    const filePath = path.join(process.cwd(), 'content/portfolio.json')
+    const jsonData = await fsPromises.readFile(filePath);
+    const objectData = JSON.parse(jsonData)
+    
     return {
-        props: {
-            photos,
-        }
+        props: objectData,
+        
     }
-}*/
+}
+
