@@ -1,11 +1,11 @@
-import React, { use, useState } from 'react'
+import React, { useState } from 'react'
 import Meta from '../components/Meta'
 
 
 
 
 const portfolio = () => {
-    let {title, description, image} = attributes;
+    
     const [allIsActive, setAllIsActive] = useState(true);
     const [weddingIsActive, setWeddingIsActive] = useState(false);
     const [pregnancyIsActive, setPregnancyIsActive] = useState(false);
