@@ -22,8 +22,8 @@ collections:
             - { label: "Tag", name: "tag", widget: "select", options: ['mariage', 'grossesse', 'bébé', 'famille', 'baptême', 'couple']}
             - { label: "Alt", name: "alt", widget: "text"}
             - { label: "Image", name: "image", widget: "image"}
-            - { label: "Width", name: "width", widget: "number"}
-            - { label: "Height", name: "height", widget: "number"}
+            - { label: "Width", name: "width", widget: "number", default: 400}
+            - { label: "Height", name: "height", widget: "number", default: 500}
 
 
 
