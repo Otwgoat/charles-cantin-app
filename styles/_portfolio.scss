@@ -23,5 +23,17 @@
             padding: 0.5rem 1rem;
         }
     }
+    .photosContainer {
+        width: 90% ;
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .photoContainer {
+            margin: 0rem 1rem;
+            margin-bottom: 1rem;
+        }
+    }
 
 }
