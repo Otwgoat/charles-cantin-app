@@ -49,7 +49,7 @@ const portfolio = (props) => {
                 
                 <li key='all' id='all' className={allIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleAllItem}>Tout</li>
                 <li key='wedding' id='wedding' className={weddingIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleWeddingItem}>Mariage</li>
-                <li key='pregancy' className={pregnancyIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleTogglePregnancyItem}>Grossesse</li>
+                <li key='pregnancy' className={pregnancyIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleTogglePregnancyItem}>Grossesse</li>
                 <li key='baby' className={babyIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleBabyItem}>Bébé</li>
                 <li key='family' className={familyIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleFamilyItem}>Famille</li>
                 <li key='baptism' className={baptismIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleBaptismItem}>Baptême</li>

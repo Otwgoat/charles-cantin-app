@@ -6,24 +6,7 @@
       "tag": "mariage",
       "alt": "une photo montrant deux mariés",
       "image": "img/home_background.jpg"
-    },
-    {
-      "title": "test 2",
-      "tag": "logo",
-      "alt": "une image du logo",
-      "image": "img/Logo-charles-cantin-1.png"
-    },
-    {
-      "title": "test 3",
-      "tag": "bébé",
-      "alt": "une photo de bébé",
-      "image": "img/Logo-charles-cantin-1.png"
-    },
-    {
-      "title": "test 4",
-      "tag": "portrait",
-      "alt": "photo montrant une femme",
-      "image": "img/boxed-water-is-better-9fl-u7icgoy-unsplash.jpg"
     }
+    
   ]
 }
