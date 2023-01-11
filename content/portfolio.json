@@ -5,8 +5,33 @@
       "title": "test 1",
       "tag": "mariage",
       "alt": "une photo montrant deux mariés",
-      "image": "img/home_background.jpg"
+      "image": "img/home_background.jpg",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "width": 500,
+      "height": 400,
+      "title": "test 2",
+      "tag": "grossesse",
+      "alt": "une photo montrant le logo",
+      "image": "img/Logo-charles-cantin-1.png"
+    },
+    {
+      "width": 400,
+      "height": 600,
+      "title": "test 3",
+      "tag": "couple",
+      "alt": "une photo montrant une femme",
+      "image": "img/boxed-water-is-better-9fl-u7icgoy-unsplash.jpg"
+    },
+    {
+      "width": 600,
+      "height": 500,
+      "title": "test 4",
+      "tag": "famille",
+      "alt": "une photo du logo encore",
+      "image": "img/Logo-charles-cantin-1.png"
     }
-    
   ]
 }
