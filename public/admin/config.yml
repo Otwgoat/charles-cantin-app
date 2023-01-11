@@ -22,6 +22,8 @@ collections:
             - { label: "Tag", name: "tag", widget: "string"}
             - { label: "Alt", name: "alt", widget: "text"}
             - { label: "Image", name: "image", widget: "image"}
+            - { label: "Width", name: "width", widget: "number"}
+            - { label: "Height", name: "height", widget: "number"}
 
 
 
