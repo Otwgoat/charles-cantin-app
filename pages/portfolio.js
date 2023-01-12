@@ -6,57 +6,39 @@ import Meta from '../components/Meta'
 
 
 const portfolio = (props) => {
-    const photos = props.photos;
-    
-    const [allIsActive, setAllIsActive] = useState(true);
-    const [weddingIsActive, setWeddingIsActive] = useState(false);
-    const [pregnancyIsActive, setPregnancyIsActive] = useState(false);
-    const [babyIsActive, setBabyIsActive] = useState(false);
-    const [familyIsActive, setFamilyIsActive] = useState(false);
-    const [baptismIsActive, setBaptismIsActive] = useState(false);
-    const [coupleIsActive, setCoupleIsActive] = useState(false);
-    const [portraitIsActive, setPortraitIsActive] = useState(false);
+    let photosData = props.photos;
+    let photosTodisplay = [];
 
-    useEffect(() => {
-        if (weddingIsActive || babyIsActive || pregnancyIsActive || familyIsActive || baptismIsActive || coupleIsActive || portraitIsActive) {
-            setAllIsActive(false)
-        } else {
-            setAllIsActive(true)
+
+    const [photos, setPhotos] = useState(photosData)
+    const [isActive, setIsActive] = useState('all')
+    
+    
+    const test = (tag) => {
+        console.log(tag);
+        setIsActive(tag);
+        displayingPhotos(tag)
+    }
+    console.log(isActive);
+    const displayingPhotos = (tag) => {
+        if(tag === 'wedding'){
+            photos.map((photo) => {
+                if(photo.tag === 'mariage'){
+                    photosTodisplay.push(photo)
+                }
+            })    
+            setPhotos(photosTodisplay)
+        } else if (tag === 'all'){
+            setPhotos(photosData)
         }
         
-    })
+    }
+   
+    
+    
 
-    const handleToggleAllItem = () => {
-        setWeddingIsActive(false)
-        setBabyIsActive(false)
-        setPregnancyIsActive(false)
-        setFamilyIsActive(false)
-        setBaptismIsActive(false)
-        setCoupleIsActive(false)
-        setPortraitIsActive(false)
-        setAllIsActive(true)
-    }
-    const handleToggleWeddingItem = () => {
-        setWeddingIsActive(!weddingIsActive)
-    }
-    const handleToggleBabyItem = () => {
-        setBabyIsActive(!babyIsActive)
-    }
-    const handleTogglePregnancyItem = () => {
-        setPregnancyIsActive(!pregnancyIsActive)
-    }
-    const handleToggleFamilyItem = () => {
-        setFamilyIsActive(!familyIsActive)
-    }
-    const handleToggleBaptismItem = () => {
-        setBaptismIsActive(!baptismIsActive)
-    }
-    const handleToggleCoupleItem = () => {
-        setCoupleIsActive(!coupleIsActive)
-    }
-    const handleTogglePortraitItem = () => {
-        setPortraitIsActive(!portraitIsActive)
-    }
+
+    
     
     
 
@@ -68,31 +50,21 @@ const portfolio = (props) => {
             <p className='descriptionContainer'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in sapien eros. Phasellus porta diam sit amet ex aliquam rhoncus. Nulla consectetur risus et condimentum pellentesque. Ut rhoncus purus dignissim condimentum commodo. Vivamus consectetur urna ut arcu mollis suscipit. Integer tellus ipsum, tempor mattis blandit vitae, ullamcorper et tortor. Curabitur vestibulum nunc nec lacus condimentum, ut bibendum sapien aliquet. Vestibulum vitae diam congue, consequat lectus at, dictum nisl. Donec tempus ante eleifend vestibulum consequat. Donec semper nisi non mi blandit, sed suscipit sapien faucibus. Vestibulum quis efficitur est. Vestibulum ex sem, commodo dictum hendrerit vel, eleifend eu sem. Morbi vehicula.</p>
             <ul id='filterNav'>
                 
-                <li key='all' id='first' className={allIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleAllItem}>Tout</li>
-                <li key='wedding' className={weddingIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleWeddingItem}>Mariage</li>
-                <li key='pregnancy' className={pregnancyIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleTogglePregnancyItem}>Grossesse</li>
-                <li key='baby' className={babyIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleBabyItem}>Bébé</li>
-                <li key='family' className={familyIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleFamilyItem}>Famille</li>
-                <li key='baptism' className={baptismIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleBaptismItem}>Baptême</li>
-                <li key='couple' className={coupleIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleToggleCoupleItem}>Couple</li>
-                <li key='portrait' id='last' className={portraitIsActive ? 'filterItemActive' : 'filterItem'} onClick={handleTogglePortraitItem}>Portrait</li>
+                <li key='all' id='first' className={isActive === 'all' ? 'filterItemActive' : 'filterItem'} onClick={() => test('all')}>Tout</li>
+                <li key='wedding' className={isActive === 'wedding' ? 'filterItemActive' : 'filterItem'} onClick={() => test('wedding')}>Mariage</li>
+                <li key='pregnancy' className={isActive === 'pregnancy' ? 'filterItemActive' : 'filterItem'} onClick={() => setIsActive('pregnancy')} >Grossesse</li>
+                <li key='baby' className={isActive === 'baby' ? 'filterItemActive' : 'filterItem'} onClick={() => setIsActive('baby')}>Bébé</li>
+                <li key='family' className={isActive === 'family' ? 'filterItemActive' : 'filterItem'} onClick={() => setIsActive('family')}>Famille</li>
+                <li key='baptism' className={isActive === 'baptism' ? 'filterItemActive' : 'filterItem'} onClick={()=> setIsActive('baptism')}>Baptême</li>
+                <li key='couple' className={isActive === 'couple' ? 'filterItemActive' : 'filterItem'} onClick={() => setIsActive('couple')}>Couple</li>
+                <li key='portrait' id='last' className={isActive === 'portrait' ? 'filterItemActive' : 'filterItem'} onClick={() => setIsActive('portrait')}>Portrait</li>
                 
             </ul>
             
             <div className='photosContainer'>
                 {photos.map((photo) => (
-                    allIsActive &&
-                    <Photo photo={photo} key={photo.title} />  
+                    <Photo photo={photo} key={photo.title} /> 
                 ))}
-                
-                   
-                
-                  
-                  
-                    
-                
-                
-
             </div>
         </div>
         
