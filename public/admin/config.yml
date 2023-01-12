@@ -19,7 +19,7 @@ collections:
           widget: list
           fields:
             - { label: "Title", name: "title", widget: "string"}
-            - { label: "Tag", name: "tag", widget: "select", options: ['mariage', 'grossesse', 'bébé', 'famille', 'baptême', 'couple']}
+            - { label: "Tag", name: "tag", widget: "select", options: ['mariage', 'grossesse', 'bébé', 'famille', 'baptême', 'couple', 'portrait']}
             - { label: "Alt", name: "alt", widget: "text"}
             - { label: "Image", name: "image", widget: "image"}
             - { label: "Width", name: "width", widget: "number", default: 400}
