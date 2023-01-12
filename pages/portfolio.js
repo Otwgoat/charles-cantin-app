@@ -8,40 +8,65 @@ import Meta from '../components/Meta'
 const portfolio = (props) => {
     let photosData = props.photos;
     let photosTodisplay = [];
+    
+    
+    
 
 
     const [photos, setPhotos] = useState(photosData)
     const [isActive, setIsActive] = useState('all')
     
     
-    const test = (tag) => {
-        console.log(tag);
+    const test = (tag) =>  {
         setIsActive(tag);
         displayingPhotos(tag)
+        
     }
-    console.log(isActive);
     const displayingPhotos = (tag) => {
-        if(tag === 'wedding'){
+        let tagToSearch = '';
+        switch (tag) {
+            case 'wedding':
+                tagToSearch = 'mariage'
+                break;
+            case 'pregnancy':
+                tagToSearch = 'grossesse'
+                break;
+            case 'baby':
+                tagToSearch = 'bébé'
+                break;
+            case 'family':
+                tagToSearch = 'famille' 
+                break;
+            case 'baptism':
+                tagToSearch = 'baptême' 
+                break;
+            case 'couple':
+                tagToSearch = 'couple'
+                break;
+            case 'portrait':
+                tagToSearch = 'portrait'        
+                break;          
+            default:
+                break;
+        }
+        
+        if(tag !== 'all'){
+            
             photos.map((photo) => {
-                if(photo.tag === 'mariage'){
+                if(photo.tag === tagToSearch){
+                    
                     photosTodisplay.push(photo)
+                    console.log(photosTodisplay);
                 }
-            })    
-            setPhotos(photosTodisplay)
-        } else if (tag === 'all'){
+                setPhotos(photosTodisplay)
+            })  
+            
+        } else if(tag === 'all'){
             setPhotos(photosData)
         }
         
+        
     }
-   
-    
-    
-
-
-    
-    
-    
-
   return (
     <div className='page container'>
         <Meta/>
@@ -52,12 +77,12 @@ const portfolio = (props) => {
                 
                 <li key='all' id='first' className={isActive === 'all' ? 'filterItemActive' : 'filterItem'} onClick={() => test('all')}>Tout</li>
                 <li key='wedding' className={isActive === 'wedding' ? 'filterItemActive' : 'filterItem'} onClick={() => test('wedding')}>Mariage</li>
-                <li key='pregnancy' className={isActive === 'pregnancy' ? 'filterItemActive' : 'filterItem'} onClick={() => setIsActive('pregnancy')} >Grossesse</li>
-                <li key='baby' className={isActive === 'baby' ? 'filterItemActive' : 'filterItem'} onClick={() => setIsActive('baby')}>Bébé</li>
-                <li key='family' className={isActive === 'family' ? 'filterItemActive' : 'filterItem'} onClick={() => setIsActive('family')}>Famille</li>
-                <li key='baptism' className={isActive === 'baptism' ? 'filterItemActive' : 'filterItem'} onClick={()=> setIsActive('baptism')}>Baptême</li>
-                <li key='couple' className={isActive === 'couple' ? 'filterItemActive' : 'filterItem'} onClick={() => setIsActive('couple')}>Couple</li>
-                <li key='portrait' id='last' className={isActive === 'portrait' ? 'filterItemActive' : 'filterItem'} onClick={() => setIsActive('portrait')}>Portrait</li>
+                <li key='pregnancy' className={isActive === 'pregnancy' ? 'filterItemActive' : 'filterItem'} onClick={() => test('pregnancy')} >Grossesse</li>
+                <li key='baby' className={isActive === 'baby' ? 'filterItemActive' : 'filterItem'} onClick={() => test('baby')}>Bébé</li>
+                <li key='family' className={isActive === 'family' ? 'filterItemActive' : 'filterItem'} onClick={() => test('family')}>Famille</li>
+                <li key='baptism' className={isActive === 'baptism' ? 'filterItemActive' : 'filterItem'} onClick={()=> test('baptism')}>Baptême</li>
+                <li key='couple' className={isActive === 'couple' ? 'filterItemActive' : 'filterItem'} onClick={() => test('couple')}>Couple</li>
+                <li key='portrait' id='last' className={isActive === 'portrait' ? 'filterItemActive' : 'filterItem'} onClick={() => test('portrait')}>Portrait</li>
                 
             </ul>
             
