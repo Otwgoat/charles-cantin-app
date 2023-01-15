@@ -29,7 +29,7 @@ collections:
       name: "prestations"
       file: "content/prestations.json"
       fields:
-        - {label: Liste des Prestations}
+        - {label: "Title", name: "title", widget: "string"}
         - label: 'Prestations'
           name: 'prestations'
           widget: list 
