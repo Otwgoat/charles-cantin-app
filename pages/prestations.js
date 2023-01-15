@@ -1,6 +1,7 @@
 import React from 'react'
 import Description from '../components/Description'
 import Meta from '../components/Meta'
+import Prestation from '../components/Prestation'
 
 const prestations = () => {
   return (
@@ -9,8 +10,8 @@ const prestations = () => {
         <div className='prestationsContainer'>
             <h2>Prestations</h2>
             <Description />
-            <div className='prestationsGrid'>
-                <Content id/> 
+            <div className='prestationsGrid' >
+                <Prestation/> 
 
             </div>
 

@@ -27,7 +27,7 @@ collections:
     
     - label: "Prestations"
       name: "prestations"
-      file: "content/prestation.json"
+      file: "content/prestations.json"
       fields:
         - {label: Liste des Prestations}
         - label: 'Prestations'
