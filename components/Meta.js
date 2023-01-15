@@ -11,7 +11,7 @@ const Meta = ({title, description}) => {
   )
 }
 Meta.defaultProps = {
-    title: "Charles Cantin, photographe professionel",
+    title: "Charles Cantin - Photographe professionel",
     description: "J'immortalise les scénes mémorable de votre vie.",
 }
 

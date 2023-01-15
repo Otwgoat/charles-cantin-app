@@ -37,6 +37,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+
+        p {
+            color: #47555E;
+        }
 
         .photoContainer {
             margin: 0rem 1rem;

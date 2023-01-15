@@ -24,7 +24,20 @@ collections:
             - { label: "Image", name: "image", widget: "image"}
             - { label: "Width", name: "width", widget: "number", default: 400}
             - { label: "Height", name: "height", widget: "number", default: 500}
-
+    
+    - label: "Prestations"
+      name: "prestations"
+      file: "content/prestation.json"
+      fields:
+        - {label: Liste des Prestations}
+        - label: 'Prestations'
+          name: 'prestations'
+          widget: list 
+          fields: 
+            - { label: "Title", name: "title", widget: "string"}
+            - { label: "Id", name: "id", widget: "string"}
+            - { label: "Description", name: "description", widget: "text"} 
+            - { label: "Price", name: "price", widget: "number"}
 
 
 

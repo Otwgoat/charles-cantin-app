@@ -2,6 +2,7 @@
 @import 'header.scss';
 @import 'home.scss';
 @import 'portfolio.scss';
+@import 'prestations.scss';
 @import url('https://use.typekit.net/vnu5wuf.css');
 
 
@@ -46,6 +47,7 @@ a {
     width: 100vw;
     display: flex;
     justify-content: center;
+    min-height: 100vh;
     
 }
 .descriptionContainer {

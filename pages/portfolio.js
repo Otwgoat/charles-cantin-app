@@ -1,5 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import Meta from '../components/Meta'
+import React, { useEffect, useState } from 'react';
+import Meta from '../components/Meta';
+import fsPromises from 'fs/promises';
+import path from 'path';
+import Photo from '../components/Photo';
+import Description from '../components/Description';
 
 
 
@@ -67,10 +71,10 @@ const portfolio = (props) => {
     }
   return (
     <div className='page container'>
-        <Meta/>
+        <Meta title={'Charles Cantin - Portfolio'} description={'Bienvenue sur mon portfolio, je vous présente ici, les plus belles scènes de vos vies.'}/>
         <div className='portfolioContainer'>
             <h2>Portfolio</h2>
-            <p className='descriptionContainer'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in sapien eros. Phasellus porta diam sit amet ex aliquam rhoncus. Nulla consectetur risus et condimentum pellentesque. Ut rhoncus purus dignissim condimentum commodo. Vivamus consectetur urna ut arcu mollis suscipit. Integer tellus ipsum, tempor mattis blandit vitae, ullamcorper et tortor. Curabitur vestibulum nunc nec lacus condimentum, ut bibendum sapien aliquet. Vestibulum vitae diam congue, consequat lectus at, dictum nisl. Donec tempus ante eleifend vestibulum consequat. Donec semper nisi non mi blandit, sed suscipit sapien faucibus. Vestibulum quis efficitur est. Vestibulum ex sem, commodo dictum hendrerit vel, eleifend eu sem. Morbi vehicula.</p>
+            <Description />
             <ul id='filterNav'>
                 
                 <li key='all' id='first' className={isActive === 'all' ? 'filterItemActive' : 'filterItem'} onClick={() => test('all')}>Tout</li>
@@ -85,26 +89,17 @@ const portfolio = (props) => {
             </ul>
             
             <div className='photosContainer'>
-                { photos.map((photo) => (
+                { photos.length > 0  ? photos.map((photo) => (
                     <Photo photo={photo} key={photo.title} /> 
-                ))}
+                )) : <p>Aucun contenu n'a été trouvé</p> }
             </div>
         </div>
-        
-        
-        
-       
-
-
-
     </div>
   )
 } 
 
 export default portfolio;
-import fsPromises from 'fs/promises';
-import path from 'path';
-import Photo from '../components/Photo';
+
 
 export const getStaticProps = async () => {
     const filePath = path.join(process.cwd(), 'content/portfolio.json')
