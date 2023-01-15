@@ -7,12 +7,7 @@ import Meta from '../components/Meta'
 
 const portfolio = (props) => {
     let photosData = props.photos;
-    let photosTodisplay = [];
     
-    
-    
-
-
     const [photos, setPhotos] = useState(photosData)
     const [isActive, setIsActive] = useState('all')
     
@@ -52,17 +47,20 @@ const portfolio = (props) => {
         
         if(tag !== 'all'){
             
-            photos.map((photo) => {
+            let photosToSearch = photosData;
+            let photosToDisplay = []
+            photosToSearch.forEach(photo => {
                 if(photo.tag === tagToSearch){
-                    
-                    photosTodisplay.push(photo)
-                    console.log(photosTodisplay);
+                    photosToDisplay.push(photo)
                 }
-                setPhotos(photosTodisplay)
-            })  
+                
+            });  
+            setPhotos(photosToDisplay)
             
         } else if(tag === 'all'){
             setPhotos(photosData)
+        } else {
+            alert('Aucun contenu n\'a été trouvé')
         }
         
         
@@ -87,7 +85,7 @@ const portfolio = (props) => {
             </ul>
             
             <div className='photosContainer'>
-                {photos.map((photo) => (
+                { photos.map((photo) => (
                     <Photo photo={photo} key={photo.title} /> 
                 ))}
             </div>
