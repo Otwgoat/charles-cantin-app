@@ -1,0 +1,35 @@
+{
+  "prestations": [
+    {
+      "title": "Juste moi",
+      "id": "onlyMe",
+      "description": "Séance pour une personne, en extérieur ou en studio.",
+      "price": 130
+    },
+    {
+      "title": "Pour deux",
+      "id": "bothOfUs",
+      "description": "Pour deux personnes, en extérieur ou en studio.",
+      "price": 195
+    },
+    {
+      "title": "Il était une fois",
+      "id": "onceUponATime",
+      "description": "Photo de grossesse (À votre domicile, en extérieur, ou en studio).",
+      "price": 160
+    },
+    {
+      "title": "Mon bébé",
+      "id": "myBaby",
+      "description": "Photo d’enfant jusqu’à 3 ans (photo à domicile).",
+      "price": 100
+    },
+    {
+      "title": "Famille",
+      "id": "family",
+      "description": "Pour la famille ou les amis jusqu’à 4 personnes, en extérieur ou en studio. 30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu’à 2 ans).",
+      "price": 220
+    }
+  ],
+  "title": "Liste des prestations"
+}
