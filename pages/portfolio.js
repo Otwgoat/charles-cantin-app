@@ -22,53 +22,25 @@ const portfolio = (props) => {
         
     }
     const displayingPhotos = (tag) => {
-        let tagToSearch = '';
-        switch (tag) {
-            case 'wedding':
-                tagToSearch = 'mariage'
-                break;
-            case 'pregnancy':
-                tagToSearch = 'grossesse'
-                break;
-            case 'baby':
-                tagToSearch = 'bébé'
-                break;
-            case 'family':
-                tagToSearch = 'famille' 
-                break;
-            case 'baptism':
-                tagToSearch = 'baptême' 
-                break;
-            case 'couple':
-                tagToSearch = 'couple'
-                break;
-            case 'portrait':
-                tagToSearch = 'portrait'        
-                break;          
-            default:
-                break;
-        }
-        
-        if(tag !== 'all'){
-            
-            let photosToSearch = photosData;
-            let photosToDisplay = []
-            photosToSearch.forEach(photo => {
-                if(photo.tag === tagToSearch){
-                    photosToDisplay.push(photo)
-                }
-                
-            });  
-            setPhotos(photosToDisplay)
-            
-        } else if(tag === 'all'){
-            setPhotos(photosData)
+        const tagToSearch = {
+            wedding: 'mariage',
+            pregnancy: 'grossesse',
+            baby: 'bébé',
+            family: 'famille', 
+            baptism: 'baptême', 
+            couple: 'couple',
+            portrait: 'portrait'
+        }[tag] || '';
+    
+        if (tag === 'all') {
+            setPhotos(photosData);
+        } else if (tagToSearch) {
+            setPhotos(photosData.filter(photo => photo.tag === tagToSearch));
         } else {
-            alert('Aucun contenu n\'a été trouvé')
+            alert('Aucun contenu n\'a été trouvé');
         }
-        
-        
     }
+    
   return (
     <div className='page container'>
         <Meta title={'Charles Cantin - Portfolio'} description={'Bienvenue sur mon portfolio, je vous présente ici, les plus belles scènes de vos vies.'}/>
