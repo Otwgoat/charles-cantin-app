@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 70px ;
+    padding-bottom: 70px;
 
     #filterNav {
         margin-top: 35px;
@@ -47,6 +48,16 @@
             margin: 0rem 1rem;
             margin-bottom: 1rem;
         }
+    }
+    #seeMoreBtn {
+        margin-top: 35px;
+        border: none;
+        border-bottom: 1px solid #47555E;
+        border-top: 1px solid #47555E;
+        background-color: none;
+        font-size: 20px;
+        color: #47555E;
+        cursor: pointer;
     }
 
 }

@@ -1,5 +1,6 @@
 @import 'settings.scss';
 @import 'header.scss';
+@import 'footer.scss';
 @import 'home.scss';
 @import 'portfolio.scss';
 @import 'prestations.scss';
@@ -28,7 +29,12 @@ h1, h2 {
 h2 {
     margin-top: 35px;
 }
-
+h3 {
+    font-size: 36px;
+    color: $color-light;
+    font-family: $font;
+    
+}
 h4 {
     font-weight: 400;
     font-size: 36px;

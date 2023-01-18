@@ -5,22 +5,18 @@ import path from 'path';
 import Photo from '../components/Photo';
 import Description from '../components/Description';
 
-
-
-
-
 const portfolio = (props) => {
     let photosData = props.photos;
-    
     const [photos, setPhotos] = useState(photosData)
     const [isActive, setIsActive] = useState('all')
     
-    
-    const test = (tag) =>  {
+    /*** This function get the tag of the selected item and send it to displayingPhotos *********/
+    const sendingTag = (tag) =>  {
         setIsActive(tag);
         displayingPhotos(tag)
         
     }
+    /*** This function displays the photos by their tags *********/
     const displayingPhotos = (tag) => {
         const tagToSearch = {
             wedding: 'mariage',
@@ -40,6 +36,11 @@ const portfolio = (props) => {
             alert('Aucun contenu n\'a été trouvé');
         }
     }
+    /***  *********/
+    const testingBtn = () => {
+        console.log('itWorks');
+
+    }
     
   return (
     <div className='page container'>
@@ -49,14 +50,14 @@ const portfolio = (props) => {
             <Description />
             <ul id='filterNav'>
                 
-                <li key='all' id='first' className={isActive === 'all' ? 'filterItemActive' : 'filterItem'} onClick={() => test('all')}>Tout</li>
-                <li key='wedding' className={isActive === 'wedding' ? 'filterItemActive' : 'filterItem'} onClick={() => test('wedding')}>Mariage</li>
-                <li key='pregnancy' className={isActive === 'pregnancy' ? 'filterItemActive' : 'filterItem'} onClick={() => test('pregnancy')} >Grossesse</li>
-                <li key='baby' className={isActive === 'baby' ? 'filterItemActive' : 'filterItem'} onClick={() => test('baby')}>Bébé</li>
-                <li key='family' className={isActive === 'family' ? 'filterItemActive' : 'filterItem'} onClick={() => test('family')}>Famille</li>
-                <li key='baptism' className={isActive === 'baptism' ? 'filterItemActive' : 'filterItem'} onClick={()=> test('baptism')}>Baptême</li>
-                <li key='couple' className={isActive === 'couple' ? 'filterItemActive' : 'filterItem'} onClick={() => test('couple')}>Couple</li>
-                <li key='portrait' id='last' className={isActive === 'portrait' ? 'filterItemActive' : 'filterItem'} onClick={() => test('portrait')}>Portrait</li>
+                <li key='all' id='first' className={isActive === 'all' ? 'filterItemActive' : 'filterItem'} onClick={() => sendingTag('all')}>Tout</li>
+                <li key='wedding' className={isActive === 'wedding' ? 'filterItemActive' : 'filterItem'} onClick={() => sendingTag('wedding')}>Mariage</li>
+                <li key='pregnancy' className={isActive === 'pregnancy' ? 'filterItemActive' : 'filterItem'} onClick={() => sendingTag('pregnancy')} >Grossesse</li>
+                <li key='baby' className={isActive === 'baby' ? 'filterItemActive' : 'filterItem'} onClick={() => sendingTag('baby')}>Bébé</li>
+                <li key='family' className={isActive === 'family' ? 'filterItemActive' : 'filterItem'} onClick={() => sendingTag('family')}>Famille</li>
+                <li key='baptism' className={isActive === 'baptism' ? 'filterItemActive' : 'filterItem'} onClick={()=> sendingTag('baptism')}>Baptême</li>
+                <li key='couple' className={isActive === 'couple' ? 'filterItemActive' : 'filterItem'} onClick={() => sendingTag('couple')}>Couple</li>
+                <li key='portrait' id='last' className={isActive === 'portrait' ? 'filterItemActive' : 'filterItem'} onClick={() => sendingTag('portrait')}>Portrait</li>
                 
             </ul>
             
@@ -65,6 +66,7 @@ const portfolio = (props) => {
                     <Photo photo={photo} key={photo.title} /> 
                 )) : <p>Aucun contenu n'a été trouvé</p> }
             </div>
+            <button id='seeMoreBtn' onClick={() => testingBtn()}>En voir plus</button>
         </div>
     </div>
   )
@@ -72,7 +74,7 @@ const portfolio = (props) => {
 
 export default portfolio;
 
-
+/*** Import the data of the portfolio's json *********/
 export const getStaticProps = async () => {
     const filePath = path.join(process.cwd(), 'content/portfolio.json')
     const jsonData = await fsPromises.readFile(filePath);

@@ -1,0 +1,43 @@
+footer {
+    background-color: #47555E ;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 2px solid #F2F1F1;
+    
+    
+
+    .footerListContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+         .footerList {
+            text-align: center;
+            li {
+            margin: 1rem;
+            
+            }
+         }
+
+        
+    }
+
+    .footerLogo {
+        height: 100%;
+        width: 10vw;
+        background-image: url(../public/img/Logo-charles-cantin-1.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-self: center;
+        flex: 1;
+
+        
+    }
+
+
+    
+}
