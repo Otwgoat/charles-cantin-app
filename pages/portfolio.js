@@ -9,6 +9,9 @@ const portfolio = (props) => {
     let photosData = props.photos;
     const [photos, setPhotos] = useState(photosData)
     const [isActive, setIsActive] = useState('all')
+    const [currentIndex, setCurrentIndex] = useState(11)
+
+    
     
     /*** This function get the tag of the selected item and send it to displayingPhotos *********/
     const sendingTag = (tag) =>  {
@@ -37,10 +40,11 @@ const portfolio = (props) => {
         }
     }
     /***  *********/
-    const testingBtn = () => {
-        console.log('itWorks');
-
-    }
+    const refreshingIndex = (photos) => {
+        setCurrentIndex(currentIndex + 12)
+        console.log(currentIndex);
+        }
+    
     
   return (
     <div className='page container'>
@@ -62,11 +66,13 @@ const portfolio = (props) => {
             </ul>
             
             <div className='photosContainer'>
-                { photos.length > 0  ? photos.map((photo) => (
+                { photos.length > 0  ? photos.slice(0, currentIndex).map((photo) => (
                     <Photo photo={photo} key={photo.title} /> 
                 )) : <p>Aucun contenu n'a été trouvé</p> }
             </div>
-            <button id='seeMoreBtn' onClick={() => testingBtn()}>En voir plus</button>
+            
+            {photos.length >= 1 ? <button id='seeMoreBtn' onClick={() => refreshingIndex()}>En voir plus</button> : ''}
+            
         </div>
     </div>
   )
