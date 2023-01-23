@@ -2,20 +2,20 @@
   "title": "Liste des photos",
   "photos": [
     {
-      "title": "test 1",
+      "title": "une photo de deux marié",
       "tag": "mariage",
       "alt": "une photo montrant deux mariés",
-      "image": "img/home_background.jpg",
+      "image": "img/eugenivy_now-1bs2sz9fd2q-unsplash.jpg",
       "width": 400,
-      "height": 200
+      "height": 600
     },
     {
       "width": 500,
       "height": 400,
-      "title": "test 2",
-      "tag": "grossesse",
-      "alt": "une photo montrant le logo",
-      "image": "img/Logo-charles-cantin-1.png"
+      "title": "Couple dans la neige",
+      "tag": "couple",
+      "alt": "une photo montrant un couple",
+      "image": "img/andrik-langfield-n8bqv6hfvow-unsplash.jpg"
     },
     {
       "width": 400,
@@ -28,10 +28,242 @@
     {
       "width": 600,
       "height": 500,
-      "title": "test 4",
+      "title": "photo de deux filles",
       "tag": "famille",
-      "alt": "une photo du logo encore",
-      "image": "img/Logo-charles-cantin-1.png"
+      "alt": "une photo montrant 2 fillettes",
+      "image": "img/caroline-hernandez-tjhu4mgslz4-unsplash.jpg"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/alex-starnes-tbypdbchszu-unsplash.jpg",
+      "title": "photo de 2 amies",
+      "tag": "famille",
+      "alt": "une photo montrant 2 amies"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/becca-tapert-bmotcrznde4-unsplash.jpg",
+      "title": "photo de couple rock",
+      "tag": "couple",
+      "alt": "une photo d'un couple"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/carly-rae-hobbins-znhoizjjiya-unsplash.jpg",
+      "title": "photo de mariage ",
+      "tag": "mariage",
+      "alt": "une photo d'un mariage"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/deniz-demirci-p87fcrfihlo-unsplash.jpg",
+      "title": "portrait d'un homme",
+      "tag": "portrait",
+      "alt": "une photo d'un homme"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/dicson-nmvktndllcy-unsplash.jpg",
+      "title": "photo d'un homme et son bébé",
+      "tag": "famille",
+      "alt": "une photo d'un homme et son bébé"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/esther-ann-glpyh1cwf0o-unsplash.jpg",
+      "title": "Photo de couple",
+      "tag": "couple",
+      "alt": "photo d'un couple"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/freestocks-yb2tglr-rvo-unsplash.jpg",
+      "title": "Photo de couple dans la neige",
+      "tag": "couple",
+      "alt": "photo d'un couple dans la neige"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/galina-kondratenko-f-ekqmcodok-unsplash.jpg",
+      "title": "photo d'une femme avec son chat",
+      "tag": "portrait",
+      "alt": "Une femme avec son chat"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/isaac-quesada-apclzzkmflu-unsplash.jpg",
+      "title": "Un couple qui attend un heureux événement",
+      "tag": "grossesse",
+      "alt": "photo d'un couple qui attend un bébé"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/jen-theodore-nyhd2usurr0-unsplash.jpg",
+      "title": "portrait d'une fille",
+      "tag": "portrait",
+      "alt": "portrait d'une fille"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/kelly-sikkema-r1zlnn69-18-unsplash.jpg",
+      "title": "Encore un couple qui attend un bébé",
+      "tag": "grossesse",
+      "alt": "Un couple qui attend un bébé"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/kelly-sikkema-yl0l73i0sog-unsplash.jpg",
+      "title": "Un petit garçon et sa famille",
+      "tag": "famille",
+      "alt": "Photo d'un petit garçon"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/laercio-cavalcanti-jyjxljvigwy-unsplash.jpg",
+      "title": "Une famille qui attend un bébé",
+      "tag": "famille",
+      "alt": "photo d'une famille qui attend un bébé"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/lauren-rader-zlty1qvi4ew-unsplash.jpg",
+      "title": "Photo de mariage",
+      "tag": "mariage",
+      "alt": "Une belle photo de mariage"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/leohoho-qenpcmlypbk-unsplash.jpg",
+      "title": "Portrait d'une jeune femme",
+      "tag": "portrait",
+      "alt": "Un portrait d'une jeune femme"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/liv-bruce-m0ovpgswk1e-unsplash.jpg",
+      "title": "Photo d'une main de bébé",
+      "tag": "bébé",
+      "alt": "Une photo d'une main de bébé"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/luke-michael-eowsjoz6mck-unsplash.jpg",
+      "title": "Un bébé a la plage",
+      "tag": "bébé",
+      "alt": "une photo d'un bébé a la plage"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/marcin-jozwiak-anpctw40l8g-unsplash.jpg",
+      "title": "Un bébé",
+      "tag": "bébé",
+      "alt": "photo d'un bébé"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/marius-muresan-imvflczhami-unsplash.jpg",
+      "title": "Photo de baptême",
+      "tag": "baptême",
+      "alt": "Un bébé au baptême"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/marius-muresan-kjbldlaze2m-unsplash.jpg",
+      "title": "Un bébé et sa maman",
+      "tag": "baptême",
+      "alt": "Un bébé au baptême"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/max-titov-qjcpk6pi8se-unsplash.jpg",
+      "title": "Photo de 3 frères ",
+      "tag": "famille",
+      "alt": "Une photo de 3 garçons"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/michal-bar-haim-nyvraxvz-_m-unsplash.jpg",
+      "title": "Un bébé",
+      "tag": "bébé",
+      "alt": "Photo d'un bébé dans des draps"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/natali-hordiiuk-jxsdf5oc3zy-unsplash.jpg",
+      "title": "Une famille ",
+      "tag": "famille",
+      "alt": "Une photo de famille "
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/priscilla-du-preez-mkjuozpy70i-unsplash.jpg",
+      "title": "3 soeurs",
+      "tag": "famille",
+      "alt": "Une photo de 3 filles"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/randy-rooibaatjie-ydjcs77bau0-unsplash.jpg",
+      "title": "Un couple qui attend son bébé avec impatience",
+      "tag": "bébé",
+      "alt": "Un couple qui attend un bébé"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/shane-xjmhxg3nrs-unsplash.jpg",
+      "title": "Un portrait",
+      "tag": "portrait",
+      "alt": "Une photo de portrait"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/simon-hattinga-verschure-kvggukz0tzq-unsplash.jpg",
+      "title": "Photo de mariage",
+      "tag": "mariage",
+      "alt": "Une photo d'un homme qui tient le bouquet de fleur"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/tim-bish-wbc9xilqb4k-unsplash.jpg",
+      "title": "Un bébé fatigué",
+      "tag": "bébé",
+      "alt": "Un bébé qui baille"
+    },
+    {
+      "width": 400,
+      "height": 500,
+      "image": "img/tyler-nix-v3dhmb1moxm-unsplash.jpg",
+      "title": "Une trés grande famille",
+      "tag": "famille",
+      "alt": "Une photo de famille a la plage"
     }
   ]
 }
