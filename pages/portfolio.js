@@ -9,7 +9,7 @@ const portfolio = (props) => {
     let photosData = props.photos;
     const [photos, setPhotos] = useState(photosData)
     const [isActive, setIsActive] = useState('all')
-    const [currentIndex, setCurrentIndex] = useState(11)
+    const [currentIndex, setCurrentIndex] = useState(12)
 
     
     
@@ -40,7 +40,7 @@ const portfolio = (props) => {
         }
     }
     /***  *********/
-    const refreshingIndex = (photos) => {
+    const refreshingIndex = () => {
         setCurrentIndex(currentIndex + 12)
         console.log(currentIndex);
         }
@@ -82,13 +82,21 @@ export default portfolio;
 
 /*** Import the data of the portfolio's json *********/
 export const getStaticProps = async () => {
+    
     const filePath = path.join(process.cwd(), 'content/portfolio.json')
     const jsonData = await fsPromises.readFile(filePath);
     const objectData = JSON.parse(jsonData)
+
     
     return {
         props: objectData,
-        
+            
     }
+
+    
+    
+    
 }
+
+
 

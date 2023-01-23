@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         
         <div className='footerListContainer'>
-            <Image src='/../public/img/Logo-charles-cantin-1.png' width={150} height={120} alt='logo du site' />
+            <Image src='/../img/Logo-charles-cantin-1.png' width={150} height={120} alt='logo du site' />
         </div>
         
         <div className='footerListContainer' id='socialContainer'>
