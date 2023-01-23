@@ -10,9 +10,15 @@ const portfolio = (props) => {
     const [photos, setPhotos] = useState(photosData)
     const [isActive, setIsActive] = useState('all')
     const [currentIndex, setCurrentIndex] = useState(12)
+    const [maxIndex, setMaxIndex] = useState(photos.length)
+    const [maxIndexReached, setMaxIndexReached] = useState(false)
 
-    
-    
+    useEffect(() => {
+        if(currentIndex >= maxIndex){
+            setMaxIndexReached(true)
+        }
+
+    }, [maxIndex, currentIndex, maxIndexReached])
     /*** This function get the tag of the selected item and send it to displayingPhotos *********/
     const sendingTag = (tag) =>  {
         setIsActive(tag);
@@ -39,11 +45,10 @@ const portfolio = (props) => {
             alert('Aucun contenu n\'a été trouvé');
         }
     }
-    /***  *********/
+    /***This function is called by the seeMoreBtn, and add 12 to the current index each time it's clicked  *********/
     const refreshingIndex = () => {
         setCurrentIndex(currentIndex + 12)
-        console.log(currentIndex);
-        }
+    }    
     
     
   return (
@@ -71,7 +76,7 @@ const portfolio = (props) => {
                 )) : <p>Aucun contenu n'a été trouvé</p> }
             </div>
             
-            {photos.length >= 1 ? <button id='seeMoreBtn' onClick={() => refreshingIndex()}>En voir plus</button> : ''}
+            {photos.length >= 1  && !maxIndexReached ? <button id='seeMoreBtn' onClick={() => refreshingIndex()}>En voir plus</button> : ''}
             
         </div>
     </div>
