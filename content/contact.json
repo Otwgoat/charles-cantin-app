@@ -1,5 +1,5 @@
 {
-  "champs de formulaire": [
+  "inputs": [
     {
       "name": "lastname",
       "type": "text",

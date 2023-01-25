@@ -42,8 +42,8 @@ collections:
       file: "content/contact.json"
       fields:
         - {label: "Title", name: "title", widget: "string"}
-        - label: 'Champs de formulaire'
-          name: 'champs de formulaire'
+        - label: 'inputs'
+          name: 'inputs'
           widget: list
           fields:
             - {label: "Name", name: "name", widget: "string"}
