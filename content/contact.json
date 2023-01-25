@@ -1,0 +1,15 @@
+{
+  "champs de formulaire": [
+    {
+      "name": "lastname",
+      "type": "text",
+      "placeholder": "Nom"
+    },
+    {
+      "name": "firstname",
+      "type": "text",
+      "placeholder": "Prénom"
+    }
+  ],
+  "title": "Liste des champs de formulaire"
+}
