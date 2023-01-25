@@ -11,6 +11,10 @@
         flex-direction: row;
         padding-bottom: 10px;
 
+        li {
+            cursor: pointer;
+        }
+
         .filterItem {
             margin: 0 0rem;
             color: #47555E;
@@ -47,6 +51,10 @@
         .photoContainer {
             margin: 0rem 1rem;
             margin-bottom: 1rem;
+            .photoSquare {
+                object-fit: cover;
+
+            }
 
             
 
@@ -57,10 +65,11 @@
         border: none;
         border-bottom: 1px solid #47555E;
         border-top: 1px solid #47555E;
-        background-color: none;
+        background-color: #F2F1F1;
         font-size: 20px;
         color: #47555E;
         cursor: pointer;
+       
     }
 
 }

@@ -22,9 +22,7 @@ collections:
             - { label: "Tag", name: "tag", widget: "select", options: ['mariage', 'grossesse', 'bébé', 'famille', 'baptême', 'couple', 'portrait']}
             - { label: "Alt", name: "alt", widget: "text"}
             - { label: "Image", name: "image", widget: "image"}
-            - { label: "Width", name: "width", widget: "number", default: 400}
-            - { label: "Height", name: "height", widget: "number", default: 500}
-    
+            
     - label: "Prestations"
       name: "prestations"
       file: "content/prestations.json"
@@ -39,6 +37,18 @@ collections:
             - { label: "Description", name: "description", widget: "text"} 
             - { label: "Price", name: "price", widget: "number"}
 
+    - label: "Contact"
+      name: "contact"
+      file: "content/contact.json"
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - label: 'Champs de formulaire'
+          name: 'champs de formulaire'
+          widget: list
+          fields:
+            - {label: "Name", name: "name", widget: "string"}
+            - {label: "Type", name: "type", widget: "select", options: ['text', 'text-area']}
+            - {label: "Placeholder", name: "placeholder", widget: "string"}
 
 
 

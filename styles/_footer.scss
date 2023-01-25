@@ -7,6 +7,23 @@ footer {
     align-items: center;
     justify-content: space-between;
     border-top: 2px solid #F2F1F1;
+    #footerCGV {
+        
+        p {
+            color: #F2F1F1;
+            text-align: center;
+            padding-bottom: 0.5rem;
+    
+            span {
+                text-decoration: underline;
+                cursor: pointer;
+                
+            }
+        }
+
+    }
+    
+    
     
     
 

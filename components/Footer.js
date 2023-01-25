@@ -12,8 +12,8 @@ const Footer = () => {
             <Image src='/../img/Logo-charles-cantin-1.png' width={150} height={120} alt='logo du site' />
         </div>
         <div id='footerCGV'>
-            <p>CGV et mentions légales</p>
-            <p>2023 Lucas Jouffroy</p>
+            <p id='cgvs'><span>CGV</span> et <span>mentions légales</span></p>
+            <p id='signature'>2023 Lucas Jouffroy</p>
         </div>
         
         
