@@ -47,7 +47,7 @@ collections:
           widget: list
           fields:
             - {label: "Name", name: "name", widget: "string"}
-            - {label: "Type", name: "type", widget: "select", options: ['text', 'text-area']}
+            - {label: "Type", name: "type", widget: "select", options: ['text', 'text-area', 'email']}
             - {label: "Placeholder", name: "placeholder", widget: "string"}
 
 
