@@ -9,6 +9,26 @@
       "name": "firstname",
       "type": "text",
       "placeholder": "Prénom"
+    },
+    {
+      "name": "email",
+      "type": "email",
+      "placeholder": "E-mail"
+    },
+    {
+      "name": "phone",
+      "type": "text",
+      "placeholder": "Téléphone"
+    },
+    {
+      "name": "subject",
+      "type": "text",
+      "placeholder": "Sujet"
+    },
+    {
+      "name": "message",
+      "type": "text-area",
+      "placeholder": "Message"
     }
   ],
   "title": "Liste des champs de formulaire"
