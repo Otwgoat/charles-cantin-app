@@ -19,6 +19,10 @@ const contact = (props) => {
                 {inputs.map((input) => (
                     <Input key={input.name} id={input.name} input={input} />
                 ))}
+                <div id='textAreaContainer'>
+                    <label htmlFor='messageTextArea'>Message</label>
+                    <textarea name='messageTextArea' id='messageTextArea' rows={5} cols={30} placeholder='ecrivez votre message'></textarea>
+                </div>
                 <button className='btn' type='submit'>Envoyer</button>
                 
             </form>

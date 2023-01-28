@@ -29,12 +29,6 @@
       "type": "text",
       "placeholder": "quel est le sujet de votre message ?",
       "label": "Sujet"
-    },
-    {
-      "name": "message",
-      "type": "textarea",
-      "placeholder": "écrivez votre message",
-      "label": "Message"
     }
   ],
   "title": "Liste des champs de formulaire"

@@ -40,10 +40,26 @@
             color: #47555E;
             font-size: 1rem;
         }
-        .inputTextArea {
+        #textAreaContainer {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
             background-color: #F2F1F1;
-            border: 1px solid #47555E;
+
+            textarea {
+                background-color: #F2F1F1;
+                border: #47555E 1px solid;
+                color: #47555E;
+                font-size: 1rem;
+            }
+            textarea:focus {
+                outline: none;
+            }
+            
+            
+            
             
         }
+        
     }
 }
