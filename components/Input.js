@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Input = (name, type, placeholder) => {
+const Input = ({input}) => {
   return (
     <>
-      <input className={type === 'text' || type === 'email' ? inputText : inputTextArea} name={name} type={type} placeholder={placeholder} />
+    <input name={input.name} type={input.area} placeholder={input.placeholder} className={input.type === 'text' || input.type === 'email' ? 'inputText' : 'inputTextArea'} />
     </>
   )
 }

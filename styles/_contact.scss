@@ -7,5 +7,20 @@
 
     form {
         margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        
+
+        .inputText {
+            background-color: #F2F1F1;
+            border: none;
+            border-bottom: 1px solid #47555E;
+            width: 50%;
+            
+
+            
+        }
     }
 }

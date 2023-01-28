@@ -5,8 +5,10 @@ import fsPromises from 'fs/promises';
 import path from 'path';
 import Input from '../components/Input';
 
+
 const contact = (props) => {
-    let inputs = props.objectData;
+    let inputs = props.inputs;
+    console.log(inputs);
   return (
     <div className='page container'>
         <Meta title={'Charles Cantin - Me contacter'} description={'Une envie , une idée, un projet ? Contactez moi via le formulaire sur cette page, je m\'engage à y repondre dans les 24h.' } />
@@ -15,7 +17,12 @@ const contact = (props) => {
             <Description />
             <form name='contact' method='POST' data-netlify="true">
                 {inputs.map((input) => (
-                    <Input name={input.name} type={input.type} placeholder={input.placeholder} />
+                    <>
+                        <label for={input.name}>{input.label}</label>
+                        <Input key={input.name} id={input.name} input={input} />
+                    
+                    </>
+                    
                 ))}
                 
             </form>
