@@ -3,32 +3,38 @@
     {
       "name": "lastname",
       "type": "text",
-      "placeholder": "Nom"
+      "placeholder": "entrez votre nom",
+      "label": "Nom"
     },
     {
       "name": "firstname",
       "type": "text",
-      "placeholder": "Prénom"
+      "placeholder": "entrez votre prénom",
+      "label": "Prénom"
     },
     {
       "name": "email",
       "type": "email",
-      "placeholder": "E-mail"
+      "placeholder": "entrez votre email",
+      "label": "E-mail"
     },
     {
       "name": "phone",
       "type": "text",
-      "placeholder": "Téléphone"
+      "placeholder": "entrez votre numéro de téléphone",
+      "label": "Téléphone"
     },
     {
       "name": "subject",
       "type": "text",
-      "placeholder": "Sujet"
+      "placeholder": "quel est le sujet de votre message ?",
+      "label": "Sujet"
     },
     {
       "name": "message",
       "type": "text-area",
-      "placeholder": "Message"
+      "placeholder": "écrivez votre message",
+      "label": "Message"
     }
   ],
   "title": "Liste des champs de formulaire"
