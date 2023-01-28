@@ -76,7 +76,7 @@ const portfolio = (props) => {
                 )) : <p>Aucun contenu n'a été trouvé</p> }
             </div>
             
-            {photos.length >= 1  && !maxIndexReached ? <button id='seeMoreBtn' onClick={() => refreshingIndex()}>En voir plus</button> : ''}
+            {photos.length >= 1  && !maxIndexReached ? <button className='btn' onClick={() => refreshingIndex()}>En voir plus</button> : ''}
             
         </div>
     </div>

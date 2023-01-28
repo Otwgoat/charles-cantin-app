@@ -13,13 +13,36 @@
         width: 80%;
         
 
+        input:focus {
+            outline: none;
+        }
+
+        .inputContainer {
+            background-color: #F2F1F1;
+            width: 50%;
+            height: 5vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 1rem;
+            
+        }
+
+        label {
+            color: #47555E;
+            font-size: 20px;
+        }
         .inputText {
             background-color: #F2F1F1;
             border: none;
             border-bottom: 1px solid #47555E;
-            width: 50%;
-            
-
+            width: 100%;
+            color: #47555E;
+            font-size: 1rem;
+        }
+        .inputTextArea {
+            background-color: #F2F1F1;
+            border: 1px solid #47555E;
             
         }
     }

@@ -17,13 +17,9 @@ const contact = (props) => {
             <Description />
             <form name='contact' method='POST' data-netlify="true">
                 {inputs.map((input) => (
-                    <>
-                        <label for={input.name}>{input.label}</label>
-                        <Input key={input.name} id={input.name} input={input} />
-                    
-                    </>
-                    
+                    <Input key={input.name} id={input.name} input={input} />
                 ))}
+                <button className='btn' type='submit'>Envoyer</button>
                 
             </form>
             
