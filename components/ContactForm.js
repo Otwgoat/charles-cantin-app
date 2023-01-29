@@ -1,16 +1,19 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import { useRouter } from 'next/router';
 
 const ContactForm = ({inputs}) => {
-  
+  const router = useRouter();
+  console.log(router);
   const [state, handleSubmit] = useForm("xpzeqrdr");
   if (state.succeeded) {
-    return <p>Merci pour votre message. Je reviendrai vers vous dans les prochaines 24h !</p>
+
+    router.push("/success.js");
   }
   return (
     <form onSubmit={handleSubmit}>
       {inputs.map((input) => (
-          <div className='inputContainer'>
+          <div key={input.name} className='inputContainer'>
             <label htmlFor={input.name}>{input.label}</label>
             <input required name={input.name} id={input.name} type={input.type} placeholder={input.placeholder} className='inputText' />
             <ValidationError field={input.name} prefix={input.label} errors={state.errors} />
