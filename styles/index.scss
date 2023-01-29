@@ -25,6 +25,10 @@ $title-font-weight: 300;
 html {
     background-color: #47555E;
 }
+body {
+    min-width: 1440px;
+    min-height: 1027px;
+}
 p {
     font-family: $font;
 }
@@ -42,6 +46,11 @@ h3 {
     color: $color-light;
     font-family: $font;
     
+}
+#succeedMessage {
+    margin-top: 35px;
+    font-size: 24px;
+    color: $color-dark;
 }
 h4 {
     font-weight: 400;
@@ -66,7 +75,7 @@ a {
     width: 100vw;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 820px;
     
 }
 .descriptionContainer {

@@ -4,6 +4,8 @@
     align-items: center;
     margin-top: 70px ;
     padding-bottom: 70px;
+    min-height: 820px;
+    
 
     form {
         margin-top: 35px;
@@ -11,6 +13,7 @@
         flex-direction: column;
         align-items: center;
         width: 80%;
+        min-height: 470px;
         
 
         input:focus {
@@ -20,7 +23,7 @@
         .inputContainer {
             background-color: #F2F1F1;
             width: 50%;
-            height: 5vh;
+            min-height: 5vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -62,4 +65,11 @@
         }
         
     }
+}
+
+.successContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
