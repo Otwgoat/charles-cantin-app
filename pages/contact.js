@@ -17,7 +17,7 @@ const contact = (props) => {
         <div className='contactContainer'>
             <h2>Me contacter</h2>
             <Description />
-            <form name='contact' method='POST' action='/pages/success.js' netlify netlify-honeypot="bot-field">
+            <form name='contact' method='POST' action='/pages/success.js' netlify data-netlify="true" netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact" />
                 {inputs.map((input) => (
                     <Input key={input.name} id={input.name} input={input} />
