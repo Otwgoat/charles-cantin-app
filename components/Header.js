@@ -1,10 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
 
 
 const Header = () => {
     const [iconPrefix, setIconPrefix] = useState(null);
+    const router = useRouter()
     useEffect(() => setIconPrefix('fab'));
     
     return (
@@ -12,15 +14,15 @@ const Header = () => {
             <nav className='navbar'>
                 <ul>
                     <li>
-                        <Link href="/portfolio">Portfolio</Link>
+                        <Link className={router.pathname === '/portfolio' ? 'navLinkActive' : ' '} href="/portfolio">Portfolio</Link>
         
                     </li>
                     <li>
-                        <Link href="/prestations">Prestations</Link>
+                        <Link className={router.pathname === '/prestations' ? 'navLinkActive' : ' '} href="/prestations">Prestations</Link>
         
                     </li>
                     <li>
-                        <Link href="/contact">Contact</Link>
+                        <Link className={router.pathname === '/contact' ? 'navLinkActive' : ' '} href="/contact">Contact</Link>
         
                     </li>
                         
