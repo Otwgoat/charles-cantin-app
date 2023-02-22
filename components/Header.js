@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
+import Navbar from './Navbar';
+import Link from 'next/link'
 
 
 const Header = () => {
@@ -11,24 +12,8 @@ const Header = () => {
     
     return (
         <header>
-            <nav className='navbar'>
-                <ul>
-                    <li>
-                        <Link className={router.pathname === '/portfolio' ? 'navLinkActive' : ' '} href="/portfolio">Portfolio</Link>
-        
-                    </li>
-                    <li>
-                        <Link className={router.pathname === '/prestations' ? 'navLinkActive' : ' '} href="/prestations">Prestations</Link>
-        
-                    </li>
-                    <li>
-                        <Link className={router.pathname === '/contact' ? 'navLinkActive' : ' '} href="/contact">Contact</Link>
-        
-                    </li>
-                        
-                </ul>
-        
-            </nav>
+            <Navbar classNameType='navbar'/>
+            <Navbar classNameType='navbar_xs'/>
             <Link href='/'><div className='logo_section'></div></Link>
             
             <div className='social_section'>

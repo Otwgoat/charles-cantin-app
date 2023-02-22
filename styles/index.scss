@@ -2,6 +2,8 @@
 @import 'header.scss';
 @import 'footer.scss';
 @import 'home.scss';
+@import 'home_mid_screen.scss';
+@import 'home_mobile_screen.scss';
 @import 'portfolio.scss';
 @import 'prestations.scss';
 @import 'contact.scss';
@@ -26,9 +28,11 @@ html {
     background-color: #47555E;
 }
 body {
-    min-width: 1440px;
-    min-height: 1027px;
+    width: 100%;
+    min-height: 100%;
 }
+
+
 p {
     font-family: $font;
 }
