@@ -26,10 +26,11 @@ $title-font-weight: 300;
 
 html {
     background-color: #47555E;
+    width: 100vw;
 }
 body {
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 
@@ -75,8 +76,9 @@ a {
     
 }
 .container {
+
     background-color: $color-light;
-    width: 100vw;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     min-height: 820px;

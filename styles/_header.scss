@@ -7,7 +7,6 @@ header {
     position: fixed;
     z-index: 1;
     nav {
-        width: 100%;
         min-height: 100%;
         display: flex;
         align-items: center;
@@ -41,8 +40,10 @@ header {
                 Link {
                     font-weight: 200;
                     font-style: normal;
+
                     
                 }
+               
             }
             .navLinkActive {
                 color: #9FD1FF;
@@ -52,10 +53,8 @@ header {
             
         }
     }
-    .navbar_xs {
-        display: none;
-    }
-    .logo_section {
+    
+    #logo_section {
         min-height: 100%;
         width: 10vw;
         content: '';
@@ -71,13 +70,12 @@ header {
         }
         
     }
-    .social_section {
-        min-height: 100%;
-        width: 30%;
-        display: flex;
-        align-items: center ;
-        justify-content: end;
-        flex: 1;
+        #social_section {
+            min-height: 100%;
+            display: flex;
+            align-items: center ;
+            justify-content: end;
+            flex: 1;
 
         a {
             margin: 0 1rem;
@@ -87,12 +85,166 @@ header {
             }
         }
     }
-
-}
-@media (max-width: 400px) {
-    
-    .navbar_xs {
+    /*#mobileNav {
         display: flex;
-        background-color: brown;
+        position: fixed;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        background-color: #47555E;
+        z-index: 1;
+
+    }*/
+
+    #closelink {
+        display: none;
     }
+}
+@media screen and (max-width: 1000px) {
+    
+    .navbar_inactive {
+        display: none;
+    }
+    
+    .social_section_inactive {
+        display: none;
+    }
+      
+    .social_icon_inactive {
+        display: none;
+    }
+    .logo_section_inactive {
+        margin-left: 1rem;
+    }
+    .logo_section_active {
+        display: none;
+    }
+    #toggleMenuDisplay {
+        min-height: 100%;
+        width: 50px;
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        
+        .toggleBars_inactive {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            width: 25px;
+            
+            .toggleBar_inactive {
+                content: '';
+                color: #F2F1F1;
+                width: 100%;
+                height: 1.5px;
+                background-color: #F2F1F1;
+                margin-bottom: 4px;
+    
+            }
+
+        }
+        .toggleBars_active {
+            position: absolute;
+            top: 40px;
+            right: 25px;
+            display: block;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+            z-index: inherit;
+            .toggleBar_active {
+                content: '';
+                color: #F2F1F1;
+                width: 100%;
+                height: 1.5px;
+                background-color: #F2F1F1;
+                
+                
+    
+            }
+            #active_left {
+                display: block;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 1px;
+                
+                
+                
+            }
+            #active_right {
+                display: block;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 1px;
+            }
+            #active_toHide {
+                display: none;
+            }
+
+        }
+    }
+    
+    .nav_active {
+        height: 30vh;
+        width: 100%;
+        background-color: #47555E;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        
+        
+        
+
+        ul {
+            display: flex;
+            width: 100%;
+            height: 50%;
+            flex: 1;
+            flex-direction: column;
+
+            li {
+                margin-bottom: 1rem;
+                &:before {
+                    display: none;
+                }
+                &:after {
+                    display: none;
+                }
+            }
+
+            Link {
+                font-size: 32px;
+            }
+        }
+
+        #social_section {
+            display: flex;
+            width: 100%;
+            height: 50%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            flex: 1;
+
+            a { 
+                margin-bottom: 1rem;
+                &:hover {
+                    transform: none;
+                    transition: none;
+                }
+            }
+            
+            
+        }
+        
+    }
+    
+   
+   
 }
