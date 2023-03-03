@@ -8,7 +8,7 @@ const index = () => {
       <div className='nameContainer'>
         <h1>Charles Cantin</h1>
         <span id='line'></span>
-        <p>Photographe</p>
+        <p id='titleP'>Photographe</p>
 
       </div>
       

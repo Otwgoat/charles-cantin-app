@@ -94,7 +94,6 @@ header {
         top: 0;
         background-color: #47555E;
         z-index: 1;
-
     }*/
 
     #closelink {
@@ -109,6 +108,7 @@ header {
     
     .social_section_inactive {
         display: none;
+        flex-shrink: 2;
     }
       
     .social_icon_inactive {
@@ -116,6 +116,7 @@ header {
     }
     .logo_section_inactive {
         margin-left: 1rem;
+        flex-grow: 2;
     }
     .logo_section_active {
         display: none;

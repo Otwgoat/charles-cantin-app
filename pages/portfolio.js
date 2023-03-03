@@ -55,7 +55,20 @@ const portfolio = (props) => {
     <div className='page container'>
         <Meta title={'Charles Cantin - Portfolio'} description={'Bienvenue sur mon portfolio, je vous présente ici, les plus belles scènes de vos vies.'}/>
         <div className='portfolioContainer'>
-            <h2>Portfolio</h2>
+            <h2 className='pageTitle'>Portfolio</h2>
+            <div id='filterNav_mobile_section'>
+                <select className='filterNav_mobile' value={isActive} onChange={(event) => sendingTag(event.target.value)} >
+                    <option value='all'>Toutes les photos</option>
+                    <option value='wedding'>Mariage</option>
+                    <option value='pregnancy'>Grossesse</option>
+                    <option value='baby'>Bébé</option>
+                    <option value='family'>Famille</option>
+                    <option value='baptism'>Baptême</option>
+                    <option value='couple'>Couple</option>
+                    <option value='portrait'>Portrait</option>
+                </select>
+            </div>
+            
             <Description />
             <ul id='filterNav'>
                 
@@ -69,6 +82,7 @@ const portfolio = (props) => {
                 <li key='portrait' id='last' className={isActive === 'portrait' ? 'filterItemActive' : 'filterItem'} onClick={() => sendingTag('portrait')}>Portrait</li>
                 
             </ul>
+           
             
             <div className='photosContainer'>
                 { photos.length > 0  ? photos.slice(0, currentIndex).map((photo) => (

@@ -21,15 +21,15 @@ const Header = () => {
             <nav id='navbar' className={isOpen ? 'navbar_active' : 'navbar_inactive'} >
                 <ul>
                     <li>
-                        <Link className={router.pathname === '/portfolio' ? 'navLinkActive' : ' '} href="/portfolio">Portfolio</Link>
+                        <Link className={router.pathname === '/portfolio' ? 'navLinkActive' : ' '} href="/portfolio" onClick={() => toggleMenu()}>Portfolio</Link>
 
                     </li>
                     <li>
-                        <Link className={router.pathname === '/prestations' ? 'navLinkActive' : ' '} href="/prestations">Prestations</Link>
+                        <Link className={router.pathname === '/prestations' ? 'navLinkActive' : ' '} href="/prestations" onClick={() => toggleMenu()} >Prestations</Link>
 
                     </li>
                     <li>
-                        <Link className={router.pathname === '/contact' ? 'navLinkActive' : ' '} href="/contact">Contact</Link>
+                        <Link className={router.pathname === '/contact' ? 'navLinkActive' : ' '} href="/contact" onClick={() => toggleMenu()} >Contact</Link>
 
                     </li>
 

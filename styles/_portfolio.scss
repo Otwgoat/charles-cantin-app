@@ -74,6 +74,82 @@
 
         }
     }
+    #filterNav_mobile_section {
+        display: none;
+    }
     
 
 }
+@media screen and (max-width: 700px) {
+    .portfolioContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        .pageTitle {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #F2F1F1;
+            margin: 0;
+            padding-top:  35px;
+            
+            
+            
+            
+           
+        }
+        #filterNav_mobile_section {
+            width: 100%;
+            background-color: #F2F1F1;
+            height: 10vh;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            
+            
+            
+            
+            .filterNav_mobile {
+                background-color: #F2F1F1;
+                width: 30%;
+                color: #47555E;
+                
+
+                option {
+                    color: #47555E;
+                    
+
+                    
+                }
+                
+            }
+            
+
+
+        }
+
+    
+    
+        #filterNav {
+            display: none;
+            .filterItem {
+                display: none;
+            }
+            .filterItemActive {
+                display: none;
+            }
+        }
+
+        .photoSquare {
+            width: 350px;
+            height: 450px;
+        }
+    }
+    
+    
+}
+
+

@@ -29,3 +29,17 @@
 
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .home {
+        height: 60vh;
+    }
+    #titleP {
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #titleP {
+        font-size: 40px;
+    }
+}

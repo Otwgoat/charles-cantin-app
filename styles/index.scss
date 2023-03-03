@@ -2,8 +2,7 @@
 @import 'header.scss';
 @import 'footer.scss';
 @import 'home.scss';
-@import 'home_mid_screen.scss';
-@import 'home_mobile_screen.scss';
+
 @import 'portfolio.scss';
 @import 'prestations.scss';
 @import 'contact.scss';
@@ -85,7 +84,7 @@ a {
     
 }
 .descriptionContainer {
-    margin-top: 35px;
+    margin-top: 20px;
     width: 50%;
     text-align: center;
     color: $color-dark;
@@ -106,4 +105,23 @@ a {
         transition: transform ease-in-out 0.5s;
     }
    
+}
+
+@media  screen and (max-width: 1000px) {
+    .container {
+        min-height: 100vh;
+    }
+    .descriptionContainer {
+        width: 80%;
+    }
+    h1, h2 {
+        font-size: 48px;
+    }
+}
+@media screen and (max-width : 500px) {
+     
+    h1, h2 {
+        font-size: 40px;
+
+    }
 }
