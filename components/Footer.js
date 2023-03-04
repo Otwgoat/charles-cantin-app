@@ -9,7 +9,7 @@ const Footer = () => {
 
         
         <div id='footerLogo'>
-            <Image src='/public/img/Logo-charles-cantin-1.png' width={150} height={120} alt='logo du site' />
+            <div id='logo_img'></div>
         </div>
         <div id='footerCGV'>
             <p id='cgvs'><span>CGV</span> et <span>mentions légales</span></p>
