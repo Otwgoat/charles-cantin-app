@@ -17,8 +17,11 @@ const portfolio = (props) => {
         if(currentIndex >= maxIndex){
             setMaxIndexReached(true)
         }
+        if(isActive !== 'all'){
+            setCurrentIndex(maxIndex)
+        } 
 
-    }, [maxIndex, currentIndex, maxIndexReached])
+    }, [maxIndex, currentIndex, maxIndexReached, isActive])
     /*** This function get the tag of the selected item and send it to displayingPhotos *********/
     const sendingTag = (tag) =>  {
         setIsActive(tag);
@@ -39,6 +42,7 @@ const portfolio = (props) => {
     
         if (tag === 'all') {
             setPhotos(photosData);
+            
         } else if (tagToSearch) {
             setPhotos(photosData.filter(photo => photo.tag === tagToSearch));
         } else {
@@ -56,6 +60,9 @@ const portfolio = (props) => {
         <Meta title={'Charles Cantin - Portfolio'} description={'Bienvenue sur mon portfolio, je vous présente ici, les plus belles scènes de vos vies.'}/>
         <div className='portfolioContainer'>
             <h2 className='pageTitle'>Portfolio</h2>
+            
+            
+            <Description />
             <div id='filterNav_mobile_section'>
                 <select className='filterNav_mobile' value={isActive} onChange={(event) => sendingTag(event.target.value)} >
                     <option value='all'>Toutes les photos</option>
@@ -68,8 +75,6 @@ const portfolio = (props) => {
                     <option value='portrait'>Portrait</option>
                 </select>
             </div>
-            
-            <Description />
             <ul id='filterNav'>
                 
                 <li key='all' id='first' className={isActive === 'all' ? 'filterItemActive' : 'filterItem'} onClick={() => sendingTag('all')}>Tout</li>
@@ -85,12 +90,12 @@ const portfolio = (props) => {
            
             
             <div className='photosContainer'>
-                { photos.length > 0  ? photos.slice(0, currentIndex).map((photo) => (
+                { photos.length > 0 ? photos.slice(0, currentIndex).map((photo) => (
                     <Photo photo={photo} key={photo.title} /> 
                 )) : <p>Aucun contenu n'a été trouvé</p> }
             </div>
             
-            {photos.length >= 1  && !maxIndexReached ? <button className='btn' onClick={() => refreshingIndex()}>En voir plus</button> : ''}
+            {photos.length >= 1  && !maxIndexReached   ? <button className='btn' onClick={() => refreshingIndex()}>En voir plus</button> : ''}
             
         </div>
     </div>
