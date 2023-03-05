@@ -2,7 +2,6 @@
 @import 'header.scss';
 @import 'footer.scss';
 @import 'home.scss';
-
 @import 'portfolio.scss';
 @import 'prestations.scss';
 @import 'contact.scss';
@@ -98,7 +97,9 @@ a {
     border-top: 1px solid #47555E;
     background-color: #F2F1F1;
     font-size: 20px;
+    
     color: #47555E;
+
     cursor: pointer;
     &:hover {
         transform: translateY(-2px);
@@ -116,6 +117,12 @@ a {
     }
     h1, h2 {
         font-size: 48px;
+    }
+}
+@media screen and (max-width: 850px){
+    #succeedMessage {
+        font-size: 20px;
+        text-align: center;
     }
 }
 @media screen and (max-width : 500px) {

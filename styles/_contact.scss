@@ -82,8 +82,12 @@
             
             .inputContainer {
                 width: 100%;
+                display: flex;
+                
                 .inputText {
                     width: 100%;
+                    align-self: center;
+                    border-radius: 0%;
                 }
             }
             #textAreaContainer {
