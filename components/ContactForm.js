@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { useRouter } from 'next/router';
+
 
 
 const ContactForm = ({inputs}) => {
   const router = useRouter();
   console.log(router);
   const [state, handleSubmit] = useForm("xpzeqrdr");
-  if (state.succeeded) {
-    return router.push('/success')
-      
-
-    
-  }
+  useEffect(() => {
+    if (state.succeeded) {
+      router.push('/success');
+    }
+  }, [state.succeeded, router]);
   return (
     <form onSubmit={handleSubmit}>
       {inputs.map((input) => (
@@ -31,6 +31,7 @@ const ContactForm = ({inputs}) => {
       <button className='btn' type='submit' disabled={state.submitting}>Envoyer</button>
       <ValidationError errors={state.errors} />
     </form>
+    
 
   )
 }

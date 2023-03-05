@@ -79,15 +79,18 @@
 @media screen and (max-width: 750px) {
     .contactContainer {
         form {
-            width: 90%;
+            
             .inputContainer {
                 width: 100%;
+                .inputText {
+                    width: 100%;
+                }
             }
             #textAreaContainer {
                 width: 100%;
             }
             #messageTextArea {
-                margin-top: 0.1rem;
+                margin-top: 0.15rem;
             }
 
         }

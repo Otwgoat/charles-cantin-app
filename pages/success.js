@@ -6,6 +6,7 @@ const success = () => {
         <div className='successContainer'>
             <h3 id='succeedMessage'>Merci pour votre message. Je reviendrai vers vous dans les prochaines 24h !</h3> 
             
+            
         </div>
         
     </div>
