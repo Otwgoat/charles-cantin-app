@@ -92,10 +92,12 @@
             }
             #textAreaContainer {
                 width: 100%;
+                display: flex;
             }
             #messageTextArea {
                 margin-top: 0.15rem;
                 width: 100%;
+                align-self: center;
             }
 
         }
