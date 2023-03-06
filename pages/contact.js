@@ -5,7 +5,7 @@ import ContactForm from '../components/ContactForm';
 import fsPromises from 'fs/promises';
 import path from 'path';
 
-
+/** Contact page , getStaticProps return the form fields added on the cms.*/
 const contact = (props) => {
     let inputs = props.inputs;
     return (

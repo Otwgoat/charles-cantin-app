@@ -5,6 +5,7 @@ import Prestation from '../components/Prestation'
 import fsPromises from 'fs/promises';
 import path from 'path';
 
+/** Prestation page, getStaticProps return the prestations added on the cms.*/
 const prestations = (props) => {
     let prestationsData = props.prestations;
     console.log(prestationsData);

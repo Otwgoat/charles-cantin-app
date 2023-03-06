@@ -1,5 +1,5 @@
 import React from 'react'
-
+/** Displays a generic description on all pages */
 const Description = () => {
   return (
     <>

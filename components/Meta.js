@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import React from 'react'
 
+
+/** This component sets the meta for each page by using props */
 const Meta = ({title, description}) => {
   return (
     <Head>

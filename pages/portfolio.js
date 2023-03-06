@@ -12,7 +12,7 @@ const portfolio = (props) => {
     const [currentIndex, setCurrentIndex] = useState(12)
     const [maxIndex, setMaxIndex] = useState(photos.length)
     const [maxIndexReached, setMaxIndexReached] = useState(false)
-
+    /** Once the last photos is displayed the seeMoreBtn is removed */
     useEffect(() => {
         if(currentIndex >= maxIndex){
             setMaxIndexReached(true)

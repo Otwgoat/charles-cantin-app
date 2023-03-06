@@ -1,6 +1,8 @@
 import React from 'react'
 import Meta from '../components/Meta'
 
+
+/** Render the home page */
 const index = () => {
   return (
     <div className='home container'>

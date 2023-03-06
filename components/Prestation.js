@@ -1,5 +1,6 @@
 import React from 'react'
 
+/** Displays each prestations */
 const Prestation = ({id, title, content, price}) => {
   return (
     <div className='prestationItem' id={id}>

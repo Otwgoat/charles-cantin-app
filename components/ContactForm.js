@@ -3,7 +3,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import { useRouter } from 'next/router';
 
 
-
+/** Displaying the form on the contact page */
 const ContactForm = ({inputs}) => {
   const router = useRouter();
   console.log(router);
@@ -31,7 +31,7 @@ const ContactForm = ({inputs}) => {
       <button className='btn' type='submit' disabled={state.submitting}>Envoyer</button>
       <ValidationError errors={state.errors} />
     </form>
-    
+
 
   )
 }
