@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 const ContactForm = ({inputs}) => {
   const router = useRouter();
   console.log(router);
-  const [state, handleSubmit] = useForm(process.env.FORM_ID);
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM_ID);
   useEffect(() => {
     if (state.succeeded) {
       router.push('/success');
